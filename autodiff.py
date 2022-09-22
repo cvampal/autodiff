@@ -36,3 +36,9 @@ class DualNum:
 
     def __rmul__(self, other):
         return self * other
+
+    def __truediv__(self, other):
+        return self * other**(-1)
+
+    def __rtruediv__(self, other):
+        return other * self ** (-1)
